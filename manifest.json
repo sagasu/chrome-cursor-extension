@@ -1,0 +1,13 @@
+{
+    "name": "Custom chrome extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [{
+        "matches": ["https://developer.chrome.com/*"],
+        "css": ["style.css"]
+    }],
+    "web_accessible_resources": [{
+        "resources": ["dino.png"],
+        "matches": ["https://developer.chrome.com/*"]
+    }]
+}
